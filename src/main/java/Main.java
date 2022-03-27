@@ -1,25 +1,32 @@
 public class Main {
     public static void main(String[] args) {
-        char var1 = '지';
-        // char는 오로지 한글자만 가능 , ''(작은 따옴표)만 사용
-        String var2 = "지태";
-        // String은 한글자 이상 가능 , ""(큰 따옴표)만 사용
-        int var3 = 2;
-        // int는 정수
-        double var4 = 3.14;
-        // double은 float 보다 큰 소수 선언 가능
-        float var5 = 3.14f;
-        // float는 소수점 선언후 뒤에 f를 무조건 붙여줘야함
-        boolean isStart = false; // true or false를 입력하여 조건식에서 많이 사용함.
+        String jitae = "몬생겼다";
+        int a = 1;
 
-        System.out.println(var1);
-        System.out.println(var2);
-        System.out.println(var3);
-        System.out.println(var4);
-        System.out.println(var5);
-        System.out.println(isStart);
+        if (jitae == "몬생겼다") { // 만약에 ()라면.. 중괄호 내부를 실행
+            System.out.println("정답입니다");
+        } else if (jitae == "잘생겼다") {
+            System.out.println("틀렸습니다1");
+        } else if (jitae == "잔생겻다") {
+            System.out.println("틀렸습니다2");
+        } else if (jitae == "좀생겼다") {
+            System.out.println("틀렸습니다3");
+        }
 
+        if (a == 0) {
+            System.out.println("a=0입니다");
+        } else if (a == 1) {
+            System.out.println("a=1입니다");
+        }
 
+        // and 연산자 , or 연산자
+
+        if (a == 0 && a == 1) { //and 연산자 사용 , 둘다 조건을 만족해야함
+            System.out.println("Test");
+        }
+        if (a == 0 || a == 1) { //or 연산자 사용 , 둘 중 하나만 만족해도 됨
+            System.out.println("Test2");
+        }
 
     }
 }

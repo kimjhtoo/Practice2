@@ -1,12 +1,13 @@
 public class Honeytip {
     public static void main(String[] args) {
-        System.out.println("안녕 자바!");
-        System.out.println("김지태");
-        System.out.println("치킨은 살 안쪄요.");
-        System.out.println("살은 내가쪄요...");
-
-        System.out.println(4.3+.2);
-
+        int cnt = 0;
+        do {
+            cnt++;
+        } while (cnt < 0);
+        if (cnt == 1) ;
+        cnt++;
+        cnt = cnt + 3;
+        System.out.printf("%d", cnt);
 
 
 
